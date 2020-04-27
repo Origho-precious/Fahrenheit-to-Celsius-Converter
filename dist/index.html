@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Fahrenheit To Celsius Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>FAHRENHEIT - CELSIUS CONVERTER</h1>
+        <h2 id="greeting">Welcome, <span id="user">user</span></h2>
+        <div class="bottom-line"></div>
+        <form class="form-group">
+            <label for="name" id="input-label">What is your name?</label>
+            <input type="text" id="name-input" class="" placeholder="Enter name">
+            <button type="submit" id="submit-btn">Submit</button>
+            <div class="clr"></div>
+            <p class="message"></p>
+        </form>
+
+        <!-- Loader -->
+        <div id="loader">
+            <img src="../img/loading.gif" alt="">
+        </div>
+
+        <!-- Result -->
+        <div class="result">
+            <h2 id="temp-from"></h2>
+            <p>Equals</p>
+            <h2 id="temp-to"></h2>
+            <button type="button">CLOSE</button>
+        </div>
+
+        <div class="modal"></div>
+    </div>
+
+    <script src="../js/app.js"></script>
+</body>
