@@ -129,6 +129,8 @@ function getConvert(){
                     if(numInput.value !== ''){
                         // Get Input value
                         calc('F', numInput.value);
+
+                        numInput.disabled = true;
     
                         // Initialize Loading
                         setTimeout(function(){
@@ -163,6 +165,8 @@ function getConvert(){
                     if(numInput.value !== ''){
                         // Get Value
                         calc('C', numInput.value);
+
+                        numInput.disabled = true;
     
                         // Initialize Loading
                         setTimeout(function(){
