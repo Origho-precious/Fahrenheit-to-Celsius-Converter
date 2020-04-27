@@ -129,13 +129,12 @@ function getConvert(){
                     if(numInput.value !== ''){
                         // Get Input value
                         calc('F', numInput.value);
-
-                        numInput.disabled = true;
     
                         // Initialize Loading
                         setTimeout(function(){
                             loader.style.display = 'block';
-                        }, 1000);
+                            numInput.disabled = true;
+                        }, 2000);
     
                         setTimeout(function(){
                             loader.style.display = 'none';
@@ -166,12 +165,12 @@ function getConvert(){
                         // Get Value
                         calc('C', numInput.value);
 
-                        numInput.disabled = true;
     
                         // Initialize Loading
                         setTimeout(function(){
                             loader.style.display = 'block';
-                        }, 1000);
+                            numInput.disabled = true;
+                        },2000);
     
                         setTimeout(function(){
                             loader.style.display = 'none';
